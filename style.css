@@ -17,6 +17,7 @@ section {
   justify-content: space-around;
   align-items: center;
   opacity: 1;
+  transition: opacity 0.8s ease;
 }
 
 .score h2 {
@@ -35,7 +36,8 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* opacity: 0; */
 }
 
 .intro h1 {
@@ -61,6 +63,7 @@ section {
   left: 50%;
   transform: translate(-50%,-50%);
   width: 65%;
+  transition: opacity 0.8s ease;
 }
 
 .choice {
