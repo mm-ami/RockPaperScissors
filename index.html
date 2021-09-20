@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>じゃんけん</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <section class="game">
     <div class="score">
@@ -19,7 +21,27 @@
         <p>0</p>
       </div>
     </div>
+
+    <div class="intro">
+      <h1>5回勝った方が勝ち！</h1>
+      <button>じゃんけんスタート</button>
+    </div>
+
+    <div class="game-start">
+      <h2 class="choice">どれを出す？</h2>
+      <div class="hand">
+        <img class="player-hand" src="./picture/rock.png">
+        <img class="computer-hand" src="./picture/rock.png">
+      </div>
+
+      <div class="button">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+      </div>
+    </div>
   </section>
   <script src="main.js"></script>
 </body>
+
 </html>
