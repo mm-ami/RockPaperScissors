@@ -78,6 +78,10 @@ section {
   align-items: center;
 }
 
+.select {
+  margin-top: 10px;
+}
+
 .player-hand {
   transform: rotate(115deg);
 }
