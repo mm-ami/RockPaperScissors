@@ -37,7 +37,6 @@ section {
   justify-content: space-around;
   align-items: center;
   transition: opacity 0.5s ease;
-  /* opacity: 0; */
 }
 
 .intro h1 {
@@ -45,7 +44,8 @@ section {
 }
 
 .intro button,
-.game-start button {
+.game-start button,
+.resetBtn input {
   width: 230px;
   height: 80px;
   font-size: 20px;
@@ -98,6 +98,11 @@ div.fadeOut {
 div.fadeIn {
   opacity: 1;
   pointer-events: all;
+}
+
+.resetBtn {
+  text-align: center;
+  margin-top: 80px;
 }
 
 @keyframes shakePlayer {
