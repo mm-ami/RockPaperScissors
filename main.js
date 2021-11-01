@@ -28,12 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     };
   
-    hands.forEach(hand => {
-      hand.addEventListener('animationend',function() {
-        this.style.animation = "";
-      });
-    });
-  
     const Gamestr = () => {
       hands.forEach(hand => {
         hand.addEventListener('animationend',function() {
@@ -63,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 reset();
                 hidden.hidden = true;
               }
-            }
+            };
           },1000);
   
           Playerhand.style.animation = "shakePlayer 1s ease";
@@ -82,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
       resetinput.type = 'button';
       resetinput.value = 'もう一度やる';
       resetBtn.appendChild(resetinput);
-  
       resetinput.addEventListener('click', () => {
         location.reload();
       });
