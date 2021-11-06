@@ -1,0 +1,27 @@
+@media screen and (max-width: 980px) {
+  .intro h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .choice {
+    font-size: 40px;
+  }
+
+  .player-hand,
+  .computer-hand {
+    height: 200px;
+  }
+
+  .game-start {
+    width: 90%;
+  }
+
+  .hands p {
+    font-size: 23px;
+  }
+  
+  .hands h2 {
+    font-size: 15px;
+  }
+}
