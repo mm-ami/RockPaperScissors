@@ -84,7 +84,7 @@ section {
 }
 
 .computer-hand {
-  transform: rotate3d(91, 66, 0, 190deg);
+  transform: rotate3d(84, 66, 0, 190deg);
 }
 
 div.fadeOut {
@@ -117,18 +117,18 @@ div.fadeIn {
 
 @keyframes shakeComputer {
   0% {
-    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
+    transform:rotate3d(84, 66, 0, 190deg) translateX(0px);
   }
   25% {
-    transform:rotate3d(91, 66, 0, 190deg) translateX(-50px);
+    transform:rotate3d(84, 66, 0, 190deg) translateX(-50px);
   }
   50% {
-    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
+    transform:rotate3d(84, 66, 0, 190deg) translateX(0px);
   }
   75% {
-    transform:rotate3d(91, 66, 0, 190deg) translateX(-50px);
+    transform:rotate3d(84, 66, 0, 190deg) translateX(-50px);
   }
   100% {
-    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
+    transform:rotate3d(84, 66, 0, 190deg) translateX(0px);
   }
 }
