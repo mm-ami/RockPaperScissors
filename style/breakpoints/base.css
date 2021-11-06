@@ -22,21 +22,23 @@ section {
 
 .intro h1 {
   font-size: 50px;
-  margin-bottom: 65px;
+  margin-bottom: 80px;
 }
 
 .intro button,
-.game-start button,
-.resetBtn input {
+.game-start button {
   width: 230px;
   height: 80px;
   font-size: 20px;
-  font-weight: 680;
+  font-weight: 600;
   border-radius: 5px;
   border: none;
-  background: none;
   background-color: #ffd803;
   cursor: pointer;
+}
+
+.game-start button {
+  margin-right: 10px;
 }
 
 .game-start {
@@ -50,7 +52,9 @@ section {
 
 .choice {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
+  color: #ffd803;
+  margin-bottom: 20px;
 }
 
 .hands,
@@ -76,11 +80,11 @@ section {
 }
 
 .player-hand {
-  transform: rotate(113deg);
+  transform: rotate(103deg);
 }
 
 .computer-hand {
-  transform: rotate3d(101, 66, 0, 190deg);
+  transform: rotate3d(91, 66, 0, 190deg);
 }
 
 div.fadeOut {
@@ -93,43 +97,38 @@ div.fadeIn {
   pointer-events: all;
 }
 
-.resetBtn {
-  text-align: center;
-  margin-top: 80px;
-}
-
 @keyframes shakePlayer {
   0% {
-    transform: rotate(115deg) translateX(0px);
+    transform: rotate(103deg) translateX(0px);
   }
   25% {
-    transform: rotate(115deg) translateX(-50px);
+    transform: rotate(103deg) translateX(-50px);
   }
   50% {
-    transform: rotate(115deg) translateX(0px);
+    transform: rotate(103deg) translateX(0px);
   }
   75% {
-    transform: rotate(115deg) translateX(-50px);
+    transform: rotate(103deg) translateX(-50px);
   }
   100% {
-    transform: rotate(115deg) translateX(0px);
+    transform: rotate(103deg) translateX(0px);
   }
 }
 
 @keyframes shakeComputer {
   0% {
-    transform:rotate3d(105, 66, 0, 200deg) translateX(0px);
+    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
   }
   25% {
-    transform:rotate3d(105, 66, 0, 200deg) translateX(-50px);
+    transform:rotate3d(91, 66, 0, 190deg) translateX(-50px);
   }
   50% {
-    transform:rotate3d(105, 66, 0, 200deg) translateX(0px);
+    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
   }
   75% {
-    transform:rotate3d(105, 66, 0, 200deg) translateX(-50px);
+    transform:rotate3d(91, 66, 0, 190deg) translateX(-50px);
   }
   100% {
-    transform:rotate3d(105, 66, 0, 200deg) translateX(0px);
+    transform:rotate3d(91, 66, 0, 190deg) translateX(0px);
   }
 }
