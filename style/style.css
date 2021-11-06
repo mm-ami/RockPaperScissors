@@ -1,1 +1,5 @@
 @import "breakpoints/base.css";
+
+@import "breakpoints/980px.css";
+
+@import "breakpoints/490px.css";
