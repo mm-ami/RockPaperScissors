@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const playBtn = document.querySelector('.intro button');
     const intro = document.querySelector('.intro')
     const gameStart = document.querySelector('.game-start');
-    const Score = document.querySelector('.score');
     const options = document.querySelectorAll('.select button');
     const Playerhand = document.querySelector('.player-hand');
     const Computerhand = document.querySelector('.computer-hand');
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
       playBtn.addEventListener('click',() => {
         intro.classList.add('fadeOut');
         gameStart.classList.add('fadeIn');
-        Score.classList.add('fadeIn');
       });
     };
   
