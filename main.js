@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const rock = document.querySelector('.rock');
     const scissors = document.querySelector('.scissors');
     const paper = document.querySelector('.paper');
-    const hidden = document.querySelector('.hidden');
     const resetBtn = document.querySelector('.resetBtn');
   
     let pscore = 0;
@@ -50,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if(pscore === 5 || cscore === 5) {
               if(pscore === 5) {
                 reset();
-                introText.textContent = "あなたの勝ちです！";
+                introText.textContent = "あなたの勝ちです";
               } else {
                 reset();
-                introText.textContent = "コンピュータの勝ちです！";
+                introText.textContent = "コンピュータの勝ちです";
               }
             };
           },1000);
