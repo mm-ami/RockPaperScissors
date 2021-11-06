@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const game = function() {
     const playBtn = document.querySelector('.intro button');
-    const intro = document.querySelector('.intro')
+    const intro = document.querySelector('.intro');
+    const introText = document.querySelector('.intro h1');
+    const introBtn = document.querySelector('.intro button');
     const gameStart = document.querySelector('.game-start');
     const options = document.querySelectorAll('.select button');
     const Playerhand = document.querySelector('.player-hand');
@@ -47,15 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
             if(pscore === 5 || cscore === 5) {
               if(pscore === 5) {
-                choice.textContent = "あなたの勝ちです！";
-                choice.style.color = "#272343"
                 reset();
-                hidden.hidden = true;
+                introText.textContent = "あなたの勝ちです！";
               } else {
-                choice.textContent = "コンピュータの勝ちです！";
-                choice.style.color = "#272343"
                 reset();
-                hidden.hidden = true;
+                introText.textContent = "コンピュータの勝ちです！";
               }
             };
           },1000);
@@ -72,11 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   
     const reset = () => {
-      const resetinput = document.createElement('input');
-      resetinput.type = 'button';
-      resetinput.value = 'もう一度やる';
-      resetBtn.appendChild(resetinput);
-      resetinput.addEventListener('click', () => {
+      intro.classList.add('fadeIn');
+      gameStart.hidden = true;
+      introBtn.textContent = 'もう一度やる';
+      introText.style.color = "#272343"
+      introBtn.addEventListener('click', () => {
         location.reload();
       });
     };
