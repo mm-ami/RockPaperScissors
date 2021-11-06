@@ -76,11 +76,11 @@ section {
 }
 
 .player-hand {
-  transform: rotate(115deg);
+  transform: rotate(113deg);
 }
 
 .computer-hand {
-  transform: rotate3d(105, 66, 0, 200deg);
+  transform: rotate3d(101, 66, 0, 190deg);
 }
 
 div.fadeOut {
