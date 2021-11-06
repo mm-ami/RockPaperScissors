@@ -48,10 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if(pscore === 5 || cscore === 5) {
               if(pscore === 5) {
                 choice.textContent = "あなたの勝ちです！";
+                choice.style.color = "#272343"
                 reset();
                 hidden.hidden = true;
               } else {
                 choice.textContent = "コンピュータの勝ちです！";
+                choice.style.color = "#272343"
                 reset();
                 hidden.hidden = true;
               }
