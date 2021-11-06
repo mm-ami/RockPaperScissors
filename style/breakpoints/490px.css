@@ -1,0 +1,15 @@
+@media screen and (max-width: 490px) {
+  .intro h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .choice {
+    font-size: 35px;
+  }
+
+  .player-hand,
+  .computer-hand {
+    height: 150px;
+  }
+}
